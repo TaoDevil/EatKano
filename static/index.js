@@ -175,7 +175,7 @@ function SubmitResults() {
 function gameTime() {
     _gameTimeNum--;
     if (_gameTimeNum <= 0) {
-        GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+        GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;松哥制裁时间到！';
         gameOver();
         GameLayerBG.className += ' flash';
         createjs.Sound.play("end");
@@ -314,7 +314,7 @@ function showGameScoreLayer() {
             cookie('bast-score', bast, 100);
         }
     }
-    document.getElementById('GameScoreLayer-bast').innerHTML = '最佳&nbsp;&nbsp;' + bast;
+    document.getElementById('GameScoreLayer-bast').innerHTML = '最作丑&nbsp;&nbsp;' + bast;
     l.style.display = 'block';
 }
 
@@ -341,11 +341,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '试着好好练一下？';
-    if (score <= 99) return 'TCL';
-    if (score <= 149) return 'TQL';
-    if (score <= 199) return '您';
-    return '人？';
+    if (score <= 49) return '这都不会做？';
+    if (score <= 99) return '拜在这现世！';
+    if (score <= 149) return '是不是作打？';
+    if (score <= 199) return '你肾莫意思？';
+    return '作！';
 }
 
 function toStr(obj) {
